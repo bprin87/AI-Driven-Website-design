@@ -24,46 +24,120 @@
 
     <!-- Navbar -->
     <header>
-        <nav>
+        <nav class="navbar">
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn">
+                <div class="bar"></div>
+            </button>
+            <div class="logo">
+                <img src="./images/logo_crest.png" alt="a couple sat by a lake">
+                <a class="title" href="#">EDGE HILL AIRWAYS</a>
+                <a class="initials" href="#">EHA</a>
+            </div>
             <ul class="menu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Manage</a></li>
+                <li><a href="#">Check in</a></li>
+                <li><a href="#">Flight status</a></li>
+            </ul>
+            <!-- Sign Up/Log In -->
+            <ul class="sign-up">
+                <li><a href="#">Join EHA Flight Club</a></li>
+                <button>Log In</button>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        
-    </section>
+    <!-- Main Content -->
+    <main>
+         <!-- Hero -->
+        <section class="hero">
+            <h1>PLAN YOUR NEXT ADVENTURE</h1>
+            <h3>Discover Canada this spring</h3>
+            <button>Read More</button>
+        </section>
 
-    <!-- Booking Widget -->
-    <section>
-        <form action=""></form>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <!-- Booking Widget -->
+        <section class="booking-widget">
+            <form class="booking-form" action=""></form>
+                <ul class="form-container">
+                    <li>
+                        <label id="from" for="from">From</label>
+                        <input type="text" name="Manchester" id="fromInput" placeholder="Where from?">
+                    </li>
+                    <li>
+                        <label id="to" for="to">To</label>
+                        <input type="text" name="destination" id="toInput" placeholder="Where to?">
+                    </li>
+                    <li class="select-dates">
+                        <label for="departure">Departure</label>
+                        <input type="text" name="depart" id="" placeholder="Select Date">
+                        <label for="return">Return</label>
+                        <input type="text" name="return" id="" placeholder="Select Date">
+                    </li>
+                    <li>
+                        <label for="passengers">Passenger(s)</label>
+                        <select name="" id="">
+                            <option value="1 Adult">1 Adult</option>
+                        </select>
+                    </li>
+                    <li class="click-search"><button class="search-flights-btn">Search flights</button></li>
+                </ul>
+        </section>
+
+        <!-- Flight Deals -->
+        <section class="flight-deals">
+            <h2>Latest flight deals from 
+                <select>
+                    <option value="Manchester">Manchester</option>
+                </select>
+            </h2>
+            <ul class="gallery-container">
+                <li class="deals">
+                    <figure>
+                        <h3>AUSTRALIA</h3>
+                        <h4>Sydney</h4>
+                        <p class="date">Book Economy Class Return until 29th Feb 24</p>
+                        <p class="price">from £926*</p>
+                    </figure>
+                    <img src="" alt="">
+                </li>
+                <li class="deals">
+                    <figure>
+                        <h3>CANADA</h3>
+                        <h4>Vancover</h4>
+                        <p class="date">Book Economy Class Return until 29th Feb 24</p>
+                        <p class="price">from £775*</p>
+                    </figure>
+                    <img src="./images/vancouver.jpeg" alt="">
+                </li>
+                <li class="deals">
+                    <figure>
+                        <h3>UNITED STATES</h3>
+                        <h4>Los Angeles</h4>
+                        <p class="date">Book Economy Class Return until 29th Feb 24</p>
+                        <p class="price">from £629*</p>
+                    </figure>
+                    <img src="./images/LA.jpeg" alt="">
+                </li>
+                <li class="deals">
+                    <figure>
+                        <h3>UNITED STATES</h3>
+                        <h4>New York</h4>
+                        <p class="date">Book Economy Class Return until 29th Feb 24</p>
+                        <p class="price">from £603*</p>
+                    </figure>
+                    <img src="./images/NYC.jpeg" alt="">
+                </li>
             </ul>
-    </section>
+        </section>
 
-    <!-- Flight Deals -->
-    <section>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
+        <!-- Travel Destination -->
+        <section></section>
 
-    <!-- Travel Destination -->
-    <section></section>
+    </main>
 
+   
     <!-- Footer -->
     <footer></footer>
     
