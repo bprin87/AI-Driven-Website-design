@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #5F295F;
+}
+
+header {
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.mobile-menu-btn {
+    position: relative;
+    display: block;
+    width: 18px;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-left: 20px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;
+}
+
+.mobile-menu-btn .bar, .mobile-menu-btn::after, .mobile-menu-btn:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #5F295F;
+    margin: 6px 0;
+    transition: all 0.4s;
+}
+
+.mobile-menu-btn.is-active:before {
+    transform: rotate(-45deg) translate(-7.5px, 3px);
+}
+
+.mobile-menu-btn.is-active:after {
+    transform: rotate(45deg) translate(-8px, -4px);
+}
+
+.mobile-menu-btn.is-active .bar {
+    opacity: 0;
+}
+
+.logo {
+    z-index: 99;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+/* Hide title */ 
+.title {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 52px;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: #fff;
+    padding-top: 100px;
+    padding-left: 20px;
+    transition: .4s;
+}
+
+.menu.is-active {
+    left: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #5F295F;
+    padding: 20px 0 30px;
+}
+
+.menu a {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sign-up {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.sign-up li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.sign-up a {
+    display: inline;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sign-up button {
+    background-color: #5F295F;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+}
+
+.sign-up button:hover {
+    background-color: #875F88;
+    transition: background-color .15s ease-in-out;
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+
+    .mobile-menu-btn {
+        display: none;
+    }
+    
+}
