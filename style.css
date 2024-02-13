@@ -273,10 +273,82 @@ a {
 
 /* FLIGHT DEALS */
 .flight-deals {
-    
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
 }
 
-/* Desktop */
+.flight-deals h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.flight-deals select {
+    border: none;
+    width: 150px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.flight-deals h2, .flight-deals select {
+    color: #5F295F;
+}
+
+.gallery-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.deals {
+    margin: 0 auto 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border: .5px solid lightgray;
+}
+
+.deals figure {
+    text-align: center;
+    padding: 10px;
+}
+
+.deals figure h3, h4, .price {
+    color: #5F295F;
+    margin: 4px 0;
+}
+
+.deals figure h3 {
+    letter-spacing: 6px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.deals figure h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.date {
+    color: black;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.deals img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    grid-row-start: 1;
+}
+
+/* DESKTOP VERSION */
 @media only screen and (min-width: 992px) {
 
     .mobile-menu-btn {
