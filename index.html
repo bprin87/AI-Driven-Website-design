@@ -30,9 +30,8 @@
                 <div class="bar"></div>
             </button>
             <div class="logo">
-                <img src="./images/logo_crest.png" alt="a couple sat by a lake">
+                <img src="./temp_images/logo_crest.png" alt="Edge Hill Airways logo">
                 <a class="title" href="#">EDGE HILL AIRWAYS</a>
-                <a class="initials" href="#">EHA</a>
             </div>
             <ul class="menu">
                 <li><a href="#">Book</a></li>
@@ -52,8 +51,8 @@
     <main>
          <!-- Hero -->
         <section class="hero">
-            <h1>PLAN YOUR NEXT ADVENTURE</h1>
-            <h3>Discover Canada this spring</h3>
+            <h2>PLAN YOUR NEXT ADVENTURE</h2>
+            <h4>Discover <strong>Canada</strong> this spring</h4>
             <button>Read More</button>
         </section>
 
@@ -61,24 +60,38 @@
         <section class="booking-widget">
             <form class="booking-form" action=""></form>
                 <ul class="form-container">
+                    <li class="travel-options">
+                        <select name="trip-type" id="trip">
+                            <option value="return">Return trip</option>
+                            <option value="one-way">One way</option>
+                        </select>
+                        <select name="cabin-type" id="cabin">
+                            <option value="economy">Economy</option>
+                            <option value="premium-economy">Premium Economy</option>
+                            <option value="first-class">Business Class</option>
+                        </select>
+                    </li>
                     <li>
                         <label id="from" for="from">From</label>
                         <input type="text" name="Manchester" id="fromInput" placeholder="Where from?">
                     </li>
-                    <li>
+                    <li class="destination">
+                        <i class="bi bi-arrow-down-up" onclick="swap()"></i>
                         <label id="to" for="to">To</label>
                         <input type="text" name="destination" id="toInput" placeholder="Where to?">
                     </li>
-                    <li class="select-dates">
+                    <li>
                         <label for="departure">Departure</label>
-                        <input type="text" name="depart" id="" placeholder="Select Date">
+                        <input type="date" name="depart" id="" placeholder="Select Date">
+                    </li>
+                    <li class="return-date">
                         <label for="return">Return</label>
-                        <input type="text" name="return" id="" placeholder="Select Date">
+                        <input type="date" name="return" id="" placeholder="Select Date">
                     </li>
                     <li>
                         <label for="passengers">Passenger(s)</label>
                         <select name="" id="">
-                            <option value="1 Adult">1 Adult</option>
+                            <option value="1">1 Adult</option>
                         </select>
                     </li>
                     <li class="click-search"><button class="search-flights-btn">Search flights</button></li>
@@ -90,6 +103,7 @@
             <h2>Latest flight deals from 
                 <select>
                     <option value="Manchester">Manchester</option>
+                    <option value="Manchester">London Heathrow</option>
                 </select>
             </h2>
             <ul class="gallery-container">
@@ -100,7 +114,7 @@
                         <p class="date">Book Economy Class Return until 29th Feb 24</p>
                         <p class="price">from £926*</p>
                     </figure>
-                    <img src="" alt="">
+                    <img src="./images/sydney.jpeg" alt="Image of sydney harbour">
                 </li>
                 <li class="deals">
                     <figure>
@@ -109,7 +123,7 @@
                         <p class="date">Book Economy Class Return until 29th Feb 24</p>
                         <p class="price">from £775*</p>
                     </figure>
-                    <img src="./images/vancouver.jpeg" alt="">
+                    <img src="./images/vancouver.jpeg" alt="Image of Vancouver with the mountains in the background">
                 </li>
                 <li class="deals">
                     <figure>
@@ -118,7 +132,7 @@
                         <p class="date">Book Economy Class Return until 29th Feb 24</p>
                         <p class="price">from £629*</p>
                     </figure>
-                    <img src="./images/LA.jpeg" alt="">
+                    <img src="./images/LA.jpeg" alt="Image of Los Angeles with the beack in the foreground">
                 </li>
                 <li class="deals">
                     <figure>
@@ -127,13 +141,30 @@
                         <p class="date">Book Economy Class Return until 29th Feb 24</p>
                         <p class="price">from £603*</p>
                     </figure>
-                    <img src="./images/NYC.jpeg" alt="">
+                    <img src="./images/NYC.jpeg" alt="Image of Central Park in New York">
                 </li>
             </ul>
         </section>
 
         <!-- Travel Destination -->
-        <section></section>
+        <section class="travel-destinations">
+            <h2>Our Travel Destinations</h2>
+            <p>We fly to 18 locations across the world. Explore the destinations we have to offer and discover somewhere new.</p>
+            
+            <article class="map-container">
+                <div class="map">
+                    <img src="./images/world-map4.jpeg" alt="Map of the world">
+                    <div class="zoom-buttons">
+                        <button class="zoom-in" onclick="zoomIn()">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                        <button class="zoom-out" onclick="zoomOut()">
+                            <i class="bi bi-dash-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
 
     </main>
 
