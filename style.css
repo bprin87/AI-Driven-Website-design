@@ -25,7 +25,6 @@ a {
     align-items: center;
     background-color: #fff;
     z-index: 100;
-    border-bottom: 1px solid lightgray;
 }
 
 .mobile-menu-btn {
@@ -196,11 +195,11 @@ a {
 /* BOOKING WIDGET */
 .booking-widget {
     width: 100%;
-    margin: 0px auto;
+    margin: 0px auto 40px auto;
 }
 
 .booking-widget ul {
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
     list-style: none;
     position: relative;
@@ -242,11 +241,16 @@ a {
     margin-right: 20px;
 }
 
+.destination {
+    position: relative;
+}
+
 .bi-arrow-down-up {
     color: #5F295F;
     position: absolute;
-    top: 28%;
+    top: 15%;
     right: 0;
+    margin-right: 10px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -271,11 +275,14 @@ a {
     transition: .4s;
 }
 
+.return-date-none {
+    display: none;
+}
+
 /* FLIGHT DEALS */
 .flight-deals {
-    margin-top: 50px;
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 0px auto 40px auto;
     display: grid;
 }
 
@@ -287,7 +294,7 @@ a {
 
 .flight-deals select {
     border: none;
-    width: 150px;
+    width: 250px;
     font-size: 22px;
     font-weight: 600;
 }
@@ -347,6 +354,79 @@ a {
     height: auto;
     grid-row-start: 1;
 }
+
+/* TRAVEL DESTINATIONS */
+.travel-destinations {
+    width: 95%;
+    margin: 0 auto 40px auto;
+    overflow: hidden;
+}
+
+.travel-destinations h2 {
+    color: #5F295F;
+    margin-bottom: 10px;
+}
+
+.travel-destinations h2, .travel-destinations p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.travel-destinations p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.travel-destinations article {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.map-container {
+    position: relative; 
+}
+
+.map {
+    overflow: scroll;
+}
+
+.zoom-buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.zoom-in, .zoom-out {
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.zoom-in {
+ border: 1px solid #5F295F;
+ border-radius: 4px 4px 0 0;
+}
+
+.zoom-out {
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 4px 4px;
+    border-style: solid;
+    border-color: #5F295F;
+}
+
+.bi-plus-lg, .bi-dash-lg {
+    color: #5F295F;
+}
+
+
+
+
+
+
 
 /* DESKTOP VERSION */
 @media only screen and (min-width: 992px) {
