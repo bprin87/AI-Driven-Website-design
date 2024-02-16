@@ -83,4 +83,17 @@ function zoomOut() {
     
 }
 
+// disable the transistion effect when resizing to mobile screen
+window.addEventListener('resize', function() {
+    let width = window.innerWidth;
+    let menu = document.querySelector('.menu');
+
+    if (width >= 891) {
+        // Disable transition when resizing to a width of 992px or more
+        menu.style.transition = 'none';
+    } else {
+        // Re-enable the transition for smaller sizes
+        menu.style.transition = '';
+    }
+});
 
