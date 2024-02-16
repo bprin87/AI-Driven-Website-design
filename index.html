@@ -51,15 +51,18 @@
     <main>
          <!-- Hero -->
         <section class="hero">
-            <h2>PLAN YOUR NEXT ADVENTURE</h2>
-            <h4>Discover <strong>Canada</strong> this spring</h4>
-            <button>Read More</button>
+            <div class="hero-content">
+                <h2>PLAN YOUR NEXT ADVENTURE</h2>
+                <h4>Discover <strong>Canada</strong> this spring</h4>
+                <button>Read More</button>
+            </div>
+           
         </section>
 
         <!-- Booking Widget -->
         <section class="booking-widget">
-            <form class="booking-form" action=""></form>
-                <ul class="form-container">
+            <form class="booking-form"></form>
+                <ul>
                     <li class="travel-options">
                         <select name="trip-type" id="trip">
                             <option value="return">Return trip</option>
@@ -71,27 +74,28 @@
                             <option value="first-class">Business Class</option>
                         </select>
                     </li>
-                    <li>
-                        <label id="from" for="from">From</label>
+                    <li class="depart-from">
+                        <label id="from">From</label>
                         <input type="text" name="Manchester" id="fromInput" placeholder="Where from?">
                     </li>
                     <li class="destination">
                         <i class="bi bi-arrow-down-up" onclick="swap()"></i>
-                        <label id="to" for="to">To</label>
+                        <label id="to">To</label>
                         <input type="text" name="destination" id="toInput" placeholder="Where to?">
                     </li>
-                    <li>
-                        <label for="departure">Departure</label>
-                        <input type="date" name="depart" id="" placeholder="Select Date">
+                    <li class="departure-date">
+                        <label>Departure</label>
+                        <input type="date" name="depart">
                     </li>
                     <li class="return-date">
-                        <label for="return">Return</label>
-                        <input type="date" name="return" id="" placeholder="Select Date">
+                        <label>Return</label>
+                        <input type="date" name="return">
                     </li>
-                    <li>
-                        <label for="passengers">Passenger(s)</label>
-                        <select name="" id="">
+                    <li class="passengers">
+                        <label>Passenger(s)</label>
+                        <select name="passenger">
                             <option value="1">1 Adult</option>
+                            <option value="1">2 Adults</option>
                         </select>
                     </li>
                     <li class="click-search"><button class="search-flights-btn">Search flights</button></li>
@@ -103,7 +107,7 @@
             <h2>Latest flight deals from 
                 <select>
                     <option value="Manchester">Manchester</option>
-                    <option value="Manchester">London Heathrow</option>
+                    <option value="London">London Heathrow</option>
                 </select>
             </h2>
             <ul class="gallery-container">
@@ -170,7 +174,47 @@
 
    
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="links-container">
+            <div class="help">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Help and Contact</a></li>
+                    <li><a href="#">Travel updates</a></li>
+                    <li><a href="#">Queries</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="book">
+                <h4>Book</h4>
+                <ul>
+                    <li><a href="#">Book fights</a></li>
+                    <li><a href="#">Transportatio</a>n</li>
+                    <li><a href="#">Planning your trip</a></li>
+                </ul>
+            </div>
+            <div class="book">
+                <h4>Manage</h4>
+                <ul>
+                    <li><a href="#">Check in</a></li>
+                    <li><a href="#">Manage your booking</a></li>
+                    <li><a href="#">Flight status</a></li>
+                </ul>
+            </div>
+            <div class="where-we-fly">
+                <h4>Where we fly</h4>
+                <ul>
+                    <li><a href="#">Route Map</a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">The Americas</a></li>
+                    <li><a href="#">Middle East</a></li>
+                    <li><a href="#">Australia</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2024 Edge Hill Airways. All Rights Reserved.</p>
+        
+    </footer>
     
 </body>
 </html>
