@@ -25,6 +25,7 @@ a {
     align-items: center;
     background-color: #fff;
     z-index: 100;
+    border-bottom: 1px solid lightgrey;
 }
 
 .mobile-menu-btn {
@@ -66,6 +67,9 @@ a {
     z-index: 99;
     margin-top: 5px;
     margin-left: 10%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -83,7 +87,7 @@ a {
     flex-direction: column;
     position: fixed;
     top: 48px;
-    left: 100%;
+    left: -100%;
     width: 100%;
     min-height: 100vh;
     z-index: 98;
@@ -91,6 +95,7 @@ a {
     padding-top: 100px;
     padding-left: 20px;
     transition: .4s;
+    transition-delay: .2s;
 }
 
 .menu.is-active {
@@ -152,27 +157,28 @@ a {
     z-index: 10;
 }
 
-.hero h2, .hero h4, .hero button {
-    position: absolute;
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10% 5%;
 }
+
 
 .hero h2, .hero h4 {
     color: #fff;
     text-shadow: 0 0 30px rgba(0,0,0,.7);
     width: 250px;
-    left: 5%;
 }
 
 .hero h2 {
-    top: 20%;
     font-size: 30px;
     font-weight: 700;
 }
 
 .hero h4 {
-    top: 37%;
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .hero button {
@@ -283,7 +289,6 @@ a {
 .flight-deals {
     width: 95%;
     margin: 0px auto 40px auto;
-    display: grid;
 }
 
 .flight-deals h2 {
@@ -294,7 +299,7 @@ a {
 
 .flight-deals select {
     border: none;
-    width: 250px;
+    width: 150px;
     font-size: 22px;
     font-weight: 600;
 }
@@ -312,9 +317,14 @@ a {
     margin: 0 auto 20px auto;
     display: grid;
     grid-template-columns: 1fr;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.3);
     border-radius: 5px;
     border: .5px solid lightgray;
+    cursor: pointer;
+}
+
+.deals:hover {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), 0px -1px 5px 0px rgba(0,0,0,0.5);
 }
 
 .deals figure {
@@ -378,17 +388,14 @@ a {
     margin-bottom: 10px;
 }
 
-.travel-destinations article {
+.map-container {
     margin: 0 auto;
     width: 95%;
 }
 
-.map-container {
-    position: relative; 
-}
-
 .map {
     overflow: scroll;
+    position: relative;
 }
 
 .zoom-buttons {
@@ -422,21 +429,285 @@ a {
     color: #5F295F;
 }
 
+/* FOOTER */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5F295F;
+}
+
+.links-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.help, .book, .manage, .where-we-fly {
+    margin: 20px auto 0 auto;
+    color: #fff;
+    padding-right: 15px;
+}
+
+.help h4, .book h4, .manage h4, .where-we-fly h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.help li, .book li, .manage li, .where-we-fly li {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.help a, .book a, .manage a, .where-we-fly a, footer p {
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 10px;
+}
 
 
-
-
-
-
-/* DESKTOP VERSION */
-@media only screen and (min-width: 992px) {
+/* IPAD+ */
+@media only screen and (min-width: 891px) {
 
     .mobile-menu-btn {
         display: none;
     }
 
-    /* .hero-banner {
+    .title {
+        display: flex;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    .menu {
+        left: 0;
+        top: 0;
+        position: relative;
+        width: auto;
+        flex-direction: row;
+        margin-left: 10px;
+        background: none;
+        padding-top: 0;
+        min-height: 0;
+        transition: none !important;
+    }
+
+    .menu li {
+        border: none;
+        padding: 0 10px;
+    }
+
+    .menu a {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .sign-up {
+        border-left: 1px solid #5F295F;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+        width: 350px;
+    }
+
+    .hero h4 {
+        font-size: 24px;
+    }
+
+    .hero button {
+        font-size: 16px;
+    }
+
+    .booking-widget ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) repeat(3, 1fr);
+        grid-template-rows: auto;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+        border-radius: 5px;
+        border: .5px solid lightgray;
+        gap: 10px;
+    }
+
+    .travel-options {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .cabin-type {
+        grid-row: 1;
+        grid-column: 3/5;
+    }
+
+    .depart-from {
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+
+    .destination {
+        grid-row: 2;
+        grid-column: 2/3;
+    }
+
+    .departure-date {
+        grid-row: 2;
+        grid-column: 3/4;
         
-        background-size: 100    }
-     */
+    }
+    .return-date {
+        grid-row: 2;
+        grid-column: 4/5;
+    }
+    .passengers{
+        grid-row: 2;
+        grid-column: 5/6;
+    }
+    .click-search {
+        grid-row: 3;
+        grid-column: 4/6;
+    }
+
+    .bi-arrow-down-up {
+        right: 95%;
+        transform: rotate(90deg);
+    }
+
+    .departure-date input, .return-date input, .passengers select {
+        padding-top: 6px;
+    }
+ 
+   .booking-widget button {
+        padding: 14px;
+   }
+
+   .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+    width: 100%;
+   }
+
+   .travel-destinations h2, .travel-destinations p {
+    width: 80%;
+   }
+
+   .map-container {
+        width: 80%;
+   }
+
+   .map img {
+        width: 100%;
+   }
+    
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1200px) {
+
+    .hero {
+        height: 850px;
+    }
+
+    .hero h2, .hero h4 {
+        width: 700px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero h4 {
+        font-size: 28px;
+    }
+
+    .booking-widget, .flight-deals, .travel-destinations, .links-container {
+        max-width: 1000px;
+    }
+    
+    .booking-widget {
+        margin-bottom: 100px;
+    }
+
+    .booking-widget ul {
+        top: 0;
+        z-index: 99;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        margin-top: -10vh;
+        width: 100%;
+    }
+
+    .flight-deals h2 {
+        font-size: 26px;
+    }
+
+    .flight-deals select {
+        font-size: 26px;
+        width: 240px;
+    }
+
+    .map-container {
+        width: 80%;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .links-container {
+        width: 70%;
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1900px) {
+
+    .hero {
+        height: 1000px;
+    }
+
+    .hero-content {
+        min-width: 800px;
+    }
+
+    .hero h2, .hero h4 {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 60px;
+    }
+
+    .hero h4 {
+        font-size: 40px;
+    }
+
+    .hero button {
+        font-size: 25px;
+    }
+
+    .travel-destinations {
+        width: 50%;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+    
 }
