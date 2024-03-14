@@ -20,7 +20,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -72,14 +72,8 @@ a {
     align-items: center;
 }
 
-.logo img {
-    width: 40px;
-    height: auto;
-}
-
-/* Hide title */ 
-.title {
-    display: none;
+.logo a {
+    font-weight: 700;
 }
 
 .menu {
@@ -109,7 +103,7 @@ a {
 
 .menu a {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .sign-up {
@@ -125,7 +119,7 @@ a {
 
 .sign-up a {
     display: inline;
-    font-size: 12px;
+    font-size: .8rem;
     font-weight: 600;
 }
 
@@ -134,7 +128,7 @@ a {
     color: #fff;
     padding: 0 15px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: .8rem;
     font-weight: 400;
     cursor: pointer;
     border: none;
@@ -171,12 +165,12 @@ a {
 }
 
 .hero h2 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .hero h4 {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -222,14 +216,14 @@ a {
 .booking-widget label {
     display: block;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: .8rem;
     color: #5F295F;
     font-weight: 500;
 }
 
 .booking-widget input, select {
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: grey;
     padding: 8px 0 8px 0;
@@ -262,7 +256,7 @@ a {
 }
 
 .bi-arrow-down-up:active {
-   font-size: 20px;
+   font-size: 1.3rem;
 }
 
 .booking-widget button {
@@ -272,7 +266,7 @@ a {
     border: none;
     background-color: #5F295F;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -291,16 +285,21 @@ a {
     margin: 0px auto 40px auto;
 }
 
+.fly-from {
+    text-align: center;
+}
+
 .flight-deals h2 {
     text-align: center;
     font-weight: 400;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .flight-deals select {
     border: none;
-    width: 150px;
-    font-size: 22px;
+    width: 180px;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -339,18 +338,18 @@ a {
 
 .deals figure h3 {
     letter-spacing: 6px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .deals figure h4 {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
 .date {
     color: black;
-    font-size: 12px;
+    font-size: .9rem;
     margin-top: 10px;
 }
 
@@ -460,7 +459,7 @@ footer {
 .help li, .book li, .manage li, .where-we-fly li {
     margin-bottom: 10px;
     margin-right: 10px;
-    font-size: 12px;
+    font-size: .8rem;
 }
 
 .help a, .book a, .manage a, .where-we-fly a, footer p {
@@ -470,7 +469,7 @@ footer {
 footer p {
     text-align: center;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: .6rem;
 }
 
 
@@ -507,7 +506,7 @@ footer p {
 
     .menu a {
         font-weight: 500;
-        font-size: 14px;
+        font-size: .9rem;
     }
 
     .sign-up {
@@ -515,16 +514,16 @@ footer p {
     }
 
     .hero h2 {
-        font-size: 35px;
+        font-size: 2.1rem;
         width: 350px;
     }
 
     .hero h4 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .hero button {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .booking-widget ul {
@@ -622,11 +621,11 @@ footer p {
     }
 
     .hero h2 {
-        font-size: 40px;
+        font-size: 3rem;
     }
 
     .hero h4 {
-        font-size: 28px;
+        font-size: 1.8rem;
     }
 
     .booking-widget, .flight-deals, .travel-destinations, .links-container {
@@ -648,11 +647,11 @@ footer p {
     }
 
     .flight-deals h2 {
-        font-size: 26px;
+        font-size: 1.7rem;
     }
 
     .flight-deals select {
-        font-size: 26px;
+        font-size: 1.7rem;
         width: 240px;
     }
 
@@ -687,15 +686,15 @@ footer p {
     }
 
     .hero h2 {
-        font-size: 60px;
+        font-size: 4rem;
     }
 
     .hero h4 {
-        font-size: 40px;
+        font-size: 3rem;
     }
 
     .hero button {
-        font-size: 25px;
+        font-size: 1.6rem;
     }
 
     .travel-destinations {

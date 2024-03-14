@@ -26,11 +26,10 @@
     <header>
         <nav class="navbar">
             <!-- Mobile Menu Button -->
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" type="button">
                 <div class="bar"></div>
             </button>
             <div class="logo">
-                <img src="./temp_images/logo_crest.png" alt="Edge Hill Airways logo">
                 <a class="title" href="#">EDGE HILL AIRWAYS</a>
             </div>
             <ul class="menu">
@@ -42,7 +41,7 @@
             <!-- Sign Up/Log In -->
             <ul class="sign-up">
                 <li><a href="#">Join EHA Flight Club</a></li>
-                <button>Log In</button>
+                <button type="submit">Log In</button>
             </ul>
         </nav>
     </header>
@@ -54,14 +53,14 @@
             <div class="hero-content">
                 <h2>PLAN YOUR NEXT ADVENTURE</h2>
                 <h4>Discover <strong>Canada</strong> this spring</h4>
-                <button>Read More</button>
+                <button type="button">Read More</button>
             </div>
            
         </section>
 
         <!-- Booking Widget -->
         <section class="booking-widget">
-            <form class="booking-form"></form>
+            <form class="booking-form" action=""></form>
                 <ul>
                     <li class="travel-options">
                         <select name="trip-type" id="trip">
@@ -98,18 +97,19 @@
                             <option value="1">2 Adults</option>
                         </select>
                     </li>
-                    <li class="click-search"><button class="search-flights-btn">Search flights</button></li>
+                    <li class="click-search"><button class="search-flights-btn" type="button">Search flights</button></li>
                 </ul>
         </section>
 
         <!-- Flight Deals -->
         <section class="flight-deals">
-            <h2>Latest flight deals from 
+            <div class="fly-from">
+                <h2>Latest flight deals from</h2>
                 <select>
                     <option value="Manchester">Manchester</option>
                     <option value="London">London Heathrow</option>
                 </select>
-            </h2>
+            </div>
             <ul class="gallery-container">
                 <li class="deals">
                     <figure>
@@ -159,24 +159,22 @@
                 <div class="map">
                     <img src="./images/world-map4.jpeg" alt="Map of the world">
                     <div class="zoom-buttons">
-                        <button class="zoom-in" onclick="zoomIn()">
+                        <button class="zoom-in" type="button" onclick="zoomIn()">
                             <i class="bi bi-plus-lg"></i>
                         </button>
-                        <button class="zoom-out" onclick="zoomOut()">
+                        <button class="zoom-out" type="button" onclick="zoomOut()">
                             <i class="bi bi-dash-lg"></i>
                         </button>
                     </div>
                 </div>
             </article>
         </section>
-
     </main>
 
-   
     <!-- Footer -->
     <footer>
         <div class="links-container">
-            <div class="help">
+            <section class="help">
                 <h4>Help</h4>
                 <ul>
                     <li><a href="#">Help and Contact</a></li>
@@ -184,24 +182,24 @@
                     <li><a href="#">Queries</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
-            </div>
-            <div class="book">
+            </section>
+            <section class="book">
                 <h4>Book</h4>
                 <ul>
                     <li><a href="#">Book fights</a></li>
                     <li><a href="#">Transportatio</a>n</li>
                     <li><a href="#">Planning your trip</a></li>
                 </ul>
-            </div>
-            <div class="book">
+            </section>
+            <section class="book">
                 <h4>Manage</h4>
                 <ul>
                     <li><a href="#">Check in</a></li>
                     <li><a href="#">Manage your booking</a></li>
                     <li><a href="#">Flight status</a></li>
                 </ul>
-            </div>
-            <div class="where-we-fly">
+            </section>
+            <section class="where-we-fly">
                 <h4>Where we fly</h4>
                 <ul>
                     <li><a href="#">Route Map</a></li>
@@ -210,11 +208,9 @@
                     <li><a href="#">Middle East</a></li>
                     <li><a href="#">Australia</a></li>
                 </ul>
-            </div>
+            </section>
         </div>
         <p>© 2024 Edge Hill Airways. All Rights Reserved.</p>
-        
     </footer>
-    
 </body>
 </html>
